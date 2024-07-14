@@ -1,0 +1,39 @@
+@tailwind components;
+
+@layer components {
+  /*    */
+  .tab-panel {
+    @apply relative inline-flex w-max items-center justify-center font-medium text-dark-grey outline-none;
+    @apply after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:w-full after:bg-black after:content-[''];
+  }
+  .tab-panel:hover {
+    @apply text-arzinja-500 after:bg-arzinja-500;
+  }
+
+  .tab-panel.active {
+    @apply rounded-t-[8px] bg-light-grey text-arzinja-500 after:bg-arzinja-500;
+  }
+  /* small tab */
+  .tab-panel.small {
+    @apply gap-1 px-4 py-2 text-sm;
+  }
+  .tab-panel.small svg {
+    @apply h-3 w-3;
+  }
+
+  /* medium tab */
+  .tab-panel.medium {
+    @apply gap-2 px-6 py-3 text-base;
+  }
+  .tab-panel.medium svg {
+    @apply h-4 w-4;
+  }
+
+  /* large tab */
+  .tab-panel.large {
+    @apply gap-2 px-8 py-[0.75rem] text-base;
+  }
+  .tab-panel.large svg {
+    @apply h-5 w-5;
+  }
+}

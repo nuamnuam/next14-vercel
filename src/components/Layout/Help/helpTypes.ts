@@ -1,0 +1,17 @@
+export const helpTypes = {
+  ROOT: '',
+  START: 'start',
+  SIGNUP: 'signup',
+  WITHDRAW_DEPOSIT: 'whitdraw_deposit',
+  DEPOSIT: 'deposit',
+  WITHDRAW: 'withdraw',
+  TOMAN_WITHDRAW_DEPOSIT: 'toman_withdraw_deposit',
+  BUY_SELL: 'buy_sell',
+  CONVERT: 'convert',
+  ACCOUNT_SECURITY: 'account_security',
+  WALLET: 'wallet',
+  APPLICATION: 'application',
+  UPDATES: 'updates',
+  FAQ: 'faq',
+  ANNOUNCEMENTS: 'announcements',
+};

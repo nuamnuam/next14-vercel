@@ -1,0 +1,26 @@
+@tailwind components;
+
+@layer components {
+  .inputWrapper {
+    @apply relative h-12 w-full rounded-lg border border-medium-grey bg-white  text-sm text-medium-grey invalid:border-error
+       focus-within:border focus-within:border-primary-200 
+       focus:outline-none
+      focus:invalid:border-error disabled:border disabled:border-medium-grey disabled:bg-light-grey disabled:text-medium-grey disabled:shadow-none md:h-14;
+    transition: border-width 0.1s ease-in-out;
+  }
+  .inputWrapper input {
+    @apply flex-1 h-full placeholder-medium-grey outline-none placeholder:text-sm w-full;
+  }
+
+  .inputWrapper input.input-ltr {
+    direction: ltr;
+    text-align: left;
+  }
+  .inputWrapper input.input-ltr::placeholder {
+    text-align: right;
+  }
+
+  .inputWrapper input.input-ltr-placeholder::placeholder {
+    text-align: left;
+  }
+}

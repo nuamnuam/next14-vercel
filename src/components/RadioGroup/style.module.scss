@@ -1,0 +1,41 @@
+.radioGroup {
+  display: flex;
+  border: 1px solid #d5e1e3;
+  background: #ecf4f5;
+  border-radius: 3px;
+  padding: 4px;
+
+  .radiogroup__item {
+    display: flex;
+    align-items: center;
+    outline: none;
+    padding: 0.2rem 3.5rem;
+    justify-content: center;
+    color: #4b595b;
+
+    &.-active {
+      background-color: #24df9a;
+      border: 1px solid #19aa75;
+      color: #fff;
+      border-radius: 3px;
+      .radiogroup__item-circle {
+        background-color: color(primary);
+      }
+    }
+    .radiogroup__item-circle {
+      display: none !important;
+      width: 1.2rem;
+      height: 1.2rem;
+      border: solid 2px color(first);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: color(secondBg);
+    }
+    p {
+      font-size: 0.9em;
+    }
+  }
+}

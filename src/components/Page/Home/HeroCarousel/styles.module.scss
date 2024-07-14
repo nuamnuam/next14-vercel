@@ -1,0 +1,73 @@
+.hero_slider {
+  :global(.carousel .slide) {
+    text-align: right;
+  }
+
+  :global(.carousel .control-dots .dot) {
+    margin: 5px 0;
+    width: 10px;
+    height: 10px;
+    box-shadow: none;
+    background-color: #d3d6e3;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 1rem;
+  }
+  :global(.carousel .control-dots .dot.selected) {
+    background-color: #00cb8c;
+    height: 20px;
+  }
+
+  &__desktop {
+    :global(.carousel.carousel-slider) {
+      padding: 3rem 3rem 3rem 0;
+    }
+
+    :global(.carousel .control-dots) {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      text-align: unset;
+      top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: fit-content;
+    }
+  }
+
+  &__tablet {
+    :global(.carousel .control-dots) {
+      display: none;
+    }
+    :global(.carousel.carousel-slider) {
+      padding: 0 0 0 1rem;
+    }
+  }
+
+  &__mobile {
+    :global(.carousel.carousel-slider) {
+      padding: 0;
+    }
+    :global(.carousel .slide) {
+      text-align: center;
+      min-height: 340px;
+    }
+    :global(.carousel .control-dots .dot) {
+      margin: 0 5px;
+      width: 10px;
+      height: 10px;
+      box-shadow: none;
+      background-color: #d3d6e3;
+      opacity: 1;
+      transition: 0.3s;
+      border-radius: 1rem;
+    }
+    :global(.carousel .control-dots .dot.selected) {
+      background-color: #00cb8c;
+      width: 20px;
+      height: 10px;
+    }
+  }
+}

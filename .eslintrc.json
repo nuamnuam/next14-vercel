@@ -1,0 +1,73 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json"],
+    "tsconfigRootDir": "."
+  },
+  "plugins": ["react"],
+  "ignorePatterns": [
+    "commitlint.config.js",
+    "next.config.js",
+    "postcss.config.js",
+    "tailwind.config.js",
+    "generateLangTypes.js"
+  ],
+  "rules": {
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/consistent-type-assertions": "off",
+    "no-prototype-builtins": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "react/jsx-key": "off",
+    "no-constant-condition": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "eqeqeq": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "n/handle-callback-err": "off",
+    "@typescript-eslint/no-redeclare": "off",
+    "@typescript-eslint/no-extraneous-class": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/prefer-optional-chain": "off",
+    "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/restrict-plus-operands": "off",
+    "no-empty": "off",
+    "@typescript-eslint/prefer-includes": "off",
+    "no-fallthrough": "off",
+    "react/no-children-prop": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "react/display-name": "off",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+    "no-useless-escape": "off",
+    "no-empty-pattern": "off",
+    "no-unreachable": "off",
+    "no-dupe-keys": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/prefer-ts-expect-error": "off",
+    "spaced-comment": "off",
+    "array-callback-return": "off",
+    "@typescript-eslint/no-invalid-void-type": "off",
+    "@typescript-eslint/promise-function-async": "off",
+    "new-cap": "off",
+    "@typescript-eslint/no-base-to-string": "off"
+  }
+}

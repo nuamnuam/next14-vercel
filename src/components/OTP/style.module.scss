@@ -1,0 +1,58 @@
+.otp {
+  & > div {
+    direction: ltr;
+    div {
+      input {
+        border-radius: 8px;
+        width: 100% !important;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #b6b9cc;
+        background-color: #fff;
+        font-size: 1rem;
+        color: #373b4f;
+        outline: none;
+        font-size: 20px;
+        font-family: iransansX;
+
+        &:focus {
+          border-color: #8af0d1;
+        }
+      }
+    }
+  }
+
+  &_boxes {
+    & div:not(:last-child) {
+      margin-right: 8px !important;
+    }
+  }
+
+  &__hasError {
+    input {
+      border-color: #ff95a5 !important;
+    }
+  }
+
+  &__alert {
+    justify-content: unset;
+    display: flex;
+    align-items: center;
+    color: #f67373;
+    margin-top: 0.5rem;
+    direction: rtl;
+    span {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.5;
+      text-align: right;
+      color: #fd7777;
+    }
+    p {
+      font-size: 0.75rem;
+      margin-right: 0.3rem;
+    }
+  }
+}
